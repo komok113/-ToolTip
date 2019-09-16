@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Просмотр фотографий" Margin="0 0 0 10"/>
+            <RadioButton GroupName="Photos" Content="Мои котята" Height="20">
+                <RadioButton.ToolTip>
+                    <ToolTip Width="200" Height="150">
+                        <StackPanel>
+                            <TextBlock Text="Мои котята"/>
+                            <Image Source="G:\WPF - проекты C#\WpfApp3\Resources\Котята.jpg"/>
+                        </StackPanel>
+                    </ToolTip>
+                </RadioButton.ToolTip>
+            </RadioButton>
+            <RadioButton GroupName="Photos" Content="Остальные фотографии"
+                         Height="20" ToolTip="Остальное"/>
+        </StackPanel>
+    </Grid>
+</Window>
